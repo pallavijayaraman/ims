@@ -1,0 +1,102 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* NAVBAR  */
+
+.navbar-brand{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.work-des-justify{
+  text-align: justify;
+}
+
+/* Home page  */
+.home-intro-header{
+  font-family: 'DM Serif Display', serif;
+}
+
+.home-intro{
+  padding-top: 35px;
+  text-align: center;
+}
+
+.home-intro-des{
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.welltopnav{
+  background-color: green;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.welltopnav a{
+  color: #FFFFFF !important;
+}
+
+
+
+.navbar{
+  background-color: #F8BBD0;
+}
+
+.navbar-light .navbar-brand {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,0);
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.navbar-nav{
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.new
+s-header{
+  font-weight: 300;
+}
+
+.short-news {
+  width: 250px;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+
+.short-news p {
+  margin: 0;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
