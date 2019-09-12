@@ -1,47 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Inventory </title>
-</head>
-
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/inventory.css' %}">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link href="inventory.css" rel="stylesheet">
-
-<body>
-<div class= "starter-template">
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="/">LOGO</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Login <span class="sr-only">(current)</span></a>
-      </li>
-</ul>
-</div>
-</nav>
-</div>
-    <div class="container">
-
-      <div >
-        <h1>Office Inventory</h1>
-      </div>
+{% extends 'inventory/base.html' %}
+{% block content %}
       {% for catalogue in catalogues %}
     <div>
-        <p><a href=" "> {{ catalogue.category }}</p>
+        <p><a href=""> {{ catalogue.category }}</a></p>
         
         <p>{{ catalogue.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
-    </div><!-- /.container -->
-
-
-</body>
-</html>
+{% endblock %}
